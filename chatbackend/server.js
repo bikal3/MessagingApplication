@@ -11,6 +11,10 @@ const port = 8000;
 
 app.use(cors());
 
+app.get('/',function(req,res){
+  res.send('Welcome to Chat bot')
+  })
+  
 var server = app.listen(
   port,
   console.log(
